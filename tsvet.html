@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.den{
+display: flex;
+height: 500px;
+justify-content: space-around;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.utro{
+    color: beige;
+min-width: 400px;
+background-image: url(./assets/images/den.jpeg);
+background-size: cover;
+}
+.veselii{
+    width: 400px;
+    background-size: cover;
+    background-image: url(./assets/images/veselii.jpeg);
+}
+
+.noch{ 
+ 
+        background-image: url(./assets/images/tsitaty-pro-noch.jpeg);
+background-size: cover;
+    }
+
+    .grust{
+        background-image: url(./assets/images/grust.jpeg);
+background-size: cover;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="den">
+    <p class="utro" 
+    onClick ="select (this)"> День-Ночь</p>
+    <p class="veselii"
+    onClick ="select(this)">Веселый-Грусный</p>
+    </div>
+
+    <script>
+
+        function select (noch) {
+    noch.classList.add("noch");
+}
+
+    function select (sender) {
+    sender.classList.add("grust");
+    }
+
+    </script>
+</body>
+</html>
